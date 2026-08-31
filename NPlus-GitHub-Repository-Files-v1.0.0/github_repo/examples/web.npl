@@ -1,0 +1,5 @@
+// N+ Web starter server
+web.listen(3000)*
+web.get("/", "<main style='font-family:system-ui;max-width:760px;margin:80px auto'><h1>N+ Web</h1><p>Hello from a web server written in N+.</p><a href='/about'>About</a></main>")*
+web.get("/about", "<main style='font-family:system-ui;max-width:760px;margin:80px auto'><h1>About N+ Web</h1><p>Fast, simple server-side web development.</p><a href='/'>Home</a></main>")*
+web.start()!

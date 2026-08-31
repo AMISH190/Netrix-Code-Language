@@ -1,0 +1,1 @@
+fetch('/api/status').then(r=>r.json()).then(data=>{document.querySelector('#status').textContent='API status: '+(data.ok?'online':'offline')}).catch(()=>{document.querySelector('#status').textContent='API status: unavailable'})

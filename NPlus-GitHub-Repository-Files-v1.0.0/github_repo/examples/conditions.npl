@@ -1,0 +1,8 @@
+let online = true*
+let players = 12*
+
+if online and players > 0 {
+    print("Server is online with {players} players")*
+} else {
+    print("Server is offline")!
+}

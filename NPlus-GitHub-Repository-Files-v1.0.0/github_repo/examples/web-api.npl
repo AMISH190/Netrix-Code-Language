@@ -1,0 +1,5 @@
+web.listen(3001)*
+web.get("/", "<!doctype html><h1>N+ Web API</h1><p>Try <a href="/api/health">/api/health</a>.</p>")*
+web.get("/api/health", "{\"status\":\"ok\"}")*
+web.post("/api/echo", "{\"message\":\"N+ Web POST route is ready\"}")*
+web.start()!

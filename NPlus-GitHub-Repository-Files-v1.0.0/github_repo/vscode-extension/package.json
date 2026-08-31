@@ -1,0 +1,48 @@
+{
+  "name": "nplus-language",
+  "displayName": "N+ Language",
+  "description": "Official N+ language support for .npl files.",
+  "version": "1.0.0",
+  "publisher": "netrix-development",
+  "license": "MIT",
+  "engines": { "vscode": "^1.90.0" },
+  "categories": ["Programming Languages", "Snippets"],
+  "activationEvents": ["onLanguage:nplus"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "nplus",
+      "aliases": ["N+", "nplus"],
+      "extensions": [".npl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nplus",
+      "scopeName": "source.nplus",
+      "path": "./syntaxes/nplus.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "nplus",
+      "path": "./snippets/nplus.json"
+    }],
+    "commands": [
+      { "command": "nplus.runFile", "title": "N+: Run File" },
+      { "command": "nplus.checkFile", "title": "N+: Check File" }
+    ],
+    "menus": {
+      "editor/title": [
+        { "command": "nplus.runFile", "when": "resourceLangId == nplus", "group": "navigation@1" },
+        { "command": "nplus.checkFile", "when": "resourceLangId == nplus", "group": "navigation@2" }
+      ]
+    },
+    "iconThemes": [
+      {
+        "id": "nplus-file-icons",
+        "label": "N+ File Icons",
+        "path": "./icons/nplus-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": { "compile": "tsc -p ./tsconfig.json" },
+  "devDependencies": { "@types/vscode": "^1.90.0", "typescript": "^5.4.0" }
+}

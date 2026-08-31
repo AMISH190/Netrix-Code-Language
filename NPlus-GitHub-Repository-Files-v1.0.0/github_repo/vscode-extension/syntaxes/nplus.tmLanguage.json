@@ -1,0 +1,113 @@
+{
+  "name": "N+",
+  "scopeName": "source.nplus",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#builtins"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#functions"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.nplus",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.nplus",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.nplus",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.nplus",
+              "match": "\\\\[nrt\\\"\\\\]"
+            },
+            {
+              "name": "variable.other.interpolation.nplus",
+              "match": "\\{[A-Za-z_][A-Za-z0-9_]*\\}"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.nplus",
+          "match": "\\b\\d+(?:\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.nplus",
+          "match": "\\b(?:let|var|const|fn|return|if|else|for|in|while|loop|match|type|import|from|try|catch|async|await|spawn|test|expect)\\b"
+        },
+        {
+          "name": "constant.language.nplus",
+          "match": "\\b(?:true|false|null)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.nplus",
+          "match": "\\b(?:and|or|not)\\b"
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "support.function.nplus",
+          "match": "\\b(?:print|input|env)\\b(?=\\s*\\()"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.nplus",
+          "match": "(?:==|!=|>=|<=|->|\\.\\.|[+\\-*/%=<>!])"
+        },
+        {
+          "name": "punctuation.terminator.nplus",
+          "match": "[*!](?=\\s*(?:$|\\}))"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function.nplus",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*\\()"
+        }
+      ]
+    }
+  }
+}

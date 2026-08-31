@@ -1,0 +1,101 @@
+{
+  "function": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:name}(${2:args}) {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ function"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition} {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ if statement"
+  },
+  "print": {
+    "prefix": "print",
+    "body": [
+      "print(${1:value})*"
+    ],
+    "description": "Print a value"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1:name} = ${2:value}*"
+    ],
+    "description": "Declare a variable"
+  },
+  "while": {
+    "prefix": "while",
+    "body": [
+      "while ${1:condition} {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ while loop"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:item} in ${2:1..10} {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ range loop"
+  },
+  "else": {
+    "prefix": "else",
+    "body": [
+      "else {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ else block"
+  },
+  "web": {
+    "prefix": "web",
+    "body": [
+      "web.listen(${1:3000})*",
+      "web.get(\"/\", \"<h1>Hello from N+ Web</h1>\")*",
+      "web.start()!"
+    ],
+    "description": "Create an N+ Web server"
+  },
+  "ifelse": {
+    "prefix": "ifelse",
+    "body": [
+      "if ${1:condition} {",
+      "    ${0}",
+      "} else {",
+      "    ",
+      "}"
+    ],
+    "description": "Create an N+ if/else statement"
+  },
+  "elseif": {
+    "prefix": "elseif",
+    "body": [
+      "if ${1:condition} {",
+      "    ${2}",
+      "} else if ${3:condition} {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create an N+ if/else-if chain"
+  },
+  "functionTyped": {
+    "prefix": "fnt",
+    "body": [
+      "fn ${1:name}(${2:value}: ${3:string}) -> ${4:string} {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Create a typed N+ function"
+  }
+}

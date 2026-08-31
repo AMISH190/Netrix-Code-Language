@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "npl": {
+      "iconPath": "nplus.png"
+    }
+  },
+  "fileExtensions": {
+    "npl": "npl"
+  }
+}

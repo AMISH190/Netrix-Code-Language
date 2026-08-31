@@ -1,0 +1,2 @@
+// Serve the demo static website locally.
+web.serve("../examples/web-site", 3000)!

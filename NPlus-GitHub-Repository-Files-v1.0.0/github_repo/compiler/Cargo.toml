@@ -1,0 +1,10 @@
+[package]
+name = "nplus"
+version = "0.2.0"
+edition = "2021"
+description = "N+ programming language starter compiler/interpreter"
+license = "MIT"
+
+[[bin]]
+name = "nplus"
+path = "src/main.rs"

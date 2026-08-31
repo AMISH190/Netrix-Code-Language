@@ -1,0 +1,26 @@
+print("N+ control flow demo")*
+
+let online = true*
+let score = 0*
+
+if online {
+    print("Server is online")*
+} else {
+    print("Server is offline")*
+}
+
+while score < 3 {
+    print("while score = {score}")*
+    score = score + 1*
+}
+
+for i in 1..6 {
+    print("for i = {i}")*
+}
+
+fn add(a: int, b: int) -> int {
+    return a + b*
+}
+
+let answer = add(20, 22)*
+print("function result = {answer}")!

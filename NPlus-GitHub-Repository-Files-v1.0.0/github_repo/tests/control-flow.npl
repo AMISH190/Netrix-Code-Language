@@ -1,0 +1,20 @@
+let x = 0*
+if true {
+    x = 1*
+} else {
+    x = 99*
+}
+
+while x < 3 {
+    x = x + 1*
+}
+
+for i in 1..4 {
+    print(i)*
+}
+
+fn multiply(a: int, b: int) -> int {
+    return a * b*
+}
+
+print(multiply(6, 7))!

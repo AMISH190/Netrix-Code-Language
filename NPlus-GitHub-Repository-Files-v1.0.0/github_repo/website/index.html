@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>N+ — Build Anything. Simply.</title>
+  <meta name="description" content="N+ is a clean, expressive programming language by Netrix Development.">
+  <meta name="theme-color" content="#0a0712">
+  <link rel="icon" type="image/png" href="assets/nplus-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="N+ home">
+      <img src="assets/nplus-logo.png" alt="N+ logo">
+      <span>N+</span>
+    </a>
+    <nav>
+      <a href="#language">Language</a>
+      <a href="#examples">Examples</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#roadmap">Roadmap</a>
+      <a class="nav-cta" href="https://github.com/YOUR-USERNAME/nplus" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> N+ v1.0 • Netrix Development</div>
+        <h1>Build anything.<br><span>Simply.</span></h1>
+        <p class="lead">A modern, clean and expressive programming language for web apps, APIs, bots, automation, AI tools and beyond.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#get-started">Get Started</a>
+          <a class="button ghost" href="#examples">See the Language</a>
+        </div>
+        <div class="mini-proof">
+          <span>✓ .npl files</span><span>✓ * or ! terminators</span><span>✓ VS Code ready</span>
+        </div>
+      </div>
+
+      <div class="hero-code glass reveal delay-1">
+        <div class="window-bar"><span></span><span></span><span></span><strong>hello.npl</strong></div>
+        <pre><code><span class="kw">let</span> name = <span class="str">"N+"</span>*
+<span class="fn">print</span>(<span class="str">"Hello {name}"</span>)!
+
+<span class="kw">fn</span> greet(name) {
+    <span class="fn">print</span>(<span class="str">"Welcome, {name}!"</span>)*
+}
+
+greet(<span class="str">"developer"</span>)!</code></pre>
+        <div class="code-status"><span class="ok">●</span> N+ program ready <span class="timing">0.7 ms</span></div>
+      </div>
+    </section>
+
+    <section class="stats shell reveal">
+      <div><strong>01</strong><span>Clean syntax</span></div>
+      <div><strong>∞</strong><span>Use cases</span></div>
+      <div><strong>AI</strong><span>Built for assistance</span></div>
+      <div><strong>1.0</strong><span>First publication</span></div>
+    </section>
+
+    <section id="language" class="section shell">
+      <div class="section-head reveal"><p class="kicker">THE LANGUAGE</p><h2>Small syntax.<br><span>Big ambitions.</span></h2><p>N+ keeps the core readable for beginners while leaving room for serious tooling, networking and high-performance compilation.</p></div>
+      <div class="feature-grid">
+        <article class="feature glass reveal"><div class="icon">✦</div><h3>Readable by default</h3><p><code>let</code>, <code>fn</code>, <code>if</code>, <code>for</code>, <code>async</code>. N+ chooses words that make code feel like a language, not a puzzle.</p></article>
+        <article class="feature glass reveal delay-1"><div class="icon">↯</div><h3>Fast path</h3><p>The long-term compiler pipeline targets native and WebAssembly output with a dedicated intermediate representation.</p></article>
+        <article class="feature glass reveal delay-2"><div class="icon">◎</div><h3>One ecosystem</h3><p>Web, APIs, Discord, Minecraft tooling, data, AI and CLI apps can share the same language and project workflow.</p></article>
+      </div>
+    </section>
+
+    <section id="examples" class="section shell">
+      <div class="split">
+        <div class="copy reveal"><p class="kicker">FEELS LIKE N+</p><h2>Code that looks good.</h2><p>Statement termination stays distinctive: <strong>*</strong> is the preferred formatter style, while <strong>!</strong> is supported for expressive code.</p><a class="text-link" href="#get-started">Explore the starter project →</a></div>
+        <div class="code-card glass reveal delay-1">
+          <div class="code-tabs"><span class="active">server.npl</span><span>api.npl</span><span>bot.npl</span></div>
+          <pre><code><span class="kw">import</span> web*
+
+<span class="kw">let</span> app = web.<span class="fn">app</span>()*
+
+app.<span class="fn">get</span>(<span class="str">"/"</span>, <span class="kw">fn</span>(req) {
+    <span class="kw">return</span> <span class="str">"Hello from N+!"</span>*
+})*
+
+app.<span class="fn">listen</span>(<span class="num">3000</span>)*</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosystem" class="section shell">
+      <div class="section-head reveal"><p class="kicker">ECOSYSTEM</p><h2>One language.<br><span>Many worlds.</span></h2></div>
+      <div class="world-grid">
+        <div class="world glass reveal"><span class="tag">WEB</span><h3>N+ Web & APIs</h3><p>HTTP, JSON, WebSockets and server applications.</p></div>
+        <div class="world glass reveal delay-1"><span class="tag">BOT</span><h3>Discord</h3><p>Build bots with clean commands and events.</p></div>
+        <div class="world glass reveal delay-2"><span class="tag">GAME</span><h3>Minecraft</h3><p>RCON, server tools and future plugin SDKs.</p></div>
+        <div class="world glass reveal"><span class="tag">AI</span><h3>N+ AI</h3><p>Explain, fix, generate, test and refactor from the editor.</p></div>
+        <div class="world glass reveal delay-1"><span class="tag">DATA</span><h3>Databases</h3><p>SQLite first, with drivers for larger production stacks.</p></div>
+        <div class="world glass reveal delay-2"><span class="tag">TOOLS</span><h3>CLI & Automation</h3><p>One command line for projects, packages, tests and builds.</p></div>
+      </div>
+    </section>
+
+    <section id="web" class="section shell"><div class="section-head reveal"><p class="kicker">N+ WEB</p><h2>From <span>.npl</span> to a local web server.</h2><p>Build a dev server with routes using the same language you use for the rest of your project.</p></div><div class="code-card glass reveal"><div class="code-tabs"><span class="active">web.npl</span><span>localhost:3000</span></div><pre><span class="kw">web</span>.listen(<span class="num">3000</span>)*
+<span class="kw">web</span>.get(<span class="str">"/"</span>, <span class="str">"&lt;h1&gt;Hello from N+ Web&lt;/h1&gt;"</span>)*
+<span class="kw">web</span>.start()!</pre><div class="code-status"><span class="ok">● server ready</span><span class="timing">GET / → 200</span></div></div></section>
+
+<section id="roadmap" class="section shell">
+      <div class="section-head reveal"><p class="kicker">ROADMAP</p><h2>Build the foundation.<br><span>Then build the world.</span></h2></div>
+      <div class="timeline">
+        <div class="milestone active reveal"><span>01</span><div><h3>Language Core</h3><p>Lexer, parser, AST, interpreter, variables, functions, conditions and friendly diagnostics.</p></div></div>
+        <div class="milestone reveal"><span>02</span><div><h3>Developer Tools</h3><p>Formatter, package manager, language server, debugger and full VS Code support.</p></div></div>
+        <div class="milestone reveal"><span>03</span><div><h3>Real-world SDKs</h3><p>Web, databases, Discord, Minecraft and AI packages become first-class ecosystem pieces.</p></div></div>
+        <div class="milestone reveal"><span>04</span><div><h3>Performance</h3><p>NIR optimization, native compilation, cross-platform builds and WebAssembly.</p></div></div>
+      </div>
+    </section>
+
+    <section id="get-started" class="cta shell reveal">
+      <div class="cta-inner">
+        <img src="assets/nplus-logo.png" alt="N+">
+        <p class="kicker">READY TO BUILD?</p>
+        <h2>Start with a tiny program.<br><span>Grow into an ecosystem.</span></h2>
+        <div class="terminal"><div><span class="prompt">›</span> <span id="typed">nplus run examples/hello.npl</span></div><div class="term-out">✓ Hello from N+! <span>0.7 ms</span></div></div>
+        <div class="hero-actions centered"><a class="button primary" href="https://github.com/YOUR-USERNAME/nplus" target="_blank" rel="noreferrer">View on GitHub ↗</a><a class="button ghost" href="#top">Back to top</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><span>© <span id="year"></span> Netrix Development</span><span>N+ • Build Anything. Simply.</span></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

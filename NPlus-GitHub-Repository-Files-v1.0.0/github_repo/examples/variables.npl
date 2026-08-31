@@ -1,0 +1,4 @@
+let name = "N+"*
+var score = 10*
+score = score + 5*
+print("{name} score: {score}")!
