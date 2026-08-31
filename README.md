@@ -127,56 +127,15 @@ The long-term N+ Web roadmap includes routing, JSON APIs, static assets, request
 # 🚀 Quick Start
 
 ## 1. Download N+
+** N+ v1.0.0
 
-Download the latest release from the **GitHub Releases** section of this repository.
+[ Download N+ for Windows ]
 
-For source development, clone the repository:
+The latest Windows executable is available in the
+v1.0.0 GitHub Release.
 
-```bash
-git clone https://github.com/YOUR-USERNAME/nplus.git
-cd nplus
-```
-
-## 2. Build the compiler
-
-N+ currently uses Rust for its compiler/interpreter implementation.
-
-```bash
-cd compiler
-cargo build --release
-```
-
-## 3. Run your first N+ program
-
-Create:
-
-```text
-hello.npl
-```
-
-Add:
-
-```npl
-print("Hello from N+!")*
-```
-
-Then run:
-
-```bash
-cargo run -- run ../examples/hello.npl
-```
-
-You should see a clean N+ terminal result similar to:
-
-```text
-▶ Running examples/hello.npl
-────────────────────────────────────────────────
-Hello from N+
-────────────────────────────────────────────────
-✓ Finished
-```
-
----
+Download:
+nplus.exe **
 
 # 🧪 Current Language Examples
 
