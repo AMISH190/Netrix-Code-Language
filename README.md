@@ -127,15 +127,15 @@ The long-term N+ Web roadmap includes routing, JSON APIs, static assets, request
 # 🚀 Quick Start
 
 ## 1. Download N+
-** N+ v1.0.0
+## N+ v1.0.0
 
-[ Download N+ for Windows ]
+## [ Download N+ for Windows ]
 
-The latest Windows executable is available in the
-v1.0.0 GitHub Release.
+## The latest Windows executable is available in the
+## v1.0.0 GitHub Release.
 
-Download:
-nplus.exe **
+## Download:
+## nplus.exe
 
 # 🧪 Current Language Examples
 
